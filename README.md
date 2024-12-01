@@ -1,4 +1,4 @@
-# Hearthstone-Data-Exploration
+# Hearthstone Data Exploration
 
 Welcome to the **Hearthstone Data Exploration** project! This project fetches Hearthstone card data from the Blizzard API, stores it locally, and includes analysis of the data.
 
@@ -19,19 +19,20 @@ Make sure you have the following installed:
 - Required Python libraries:
   - `requests` (for API requests)
   - `pandas` (for data handling)
-  - `matplotlib` (for plotting)
+  - `matplotlib` and `seaborn` (for plotting)
   - `toml` (for configuration file parsing)
 
 To install the required libraries, run:
 
 ```bash
-pip install requests pandas matplotlib toml
+pip install requests pandas matplotlib seaborn toml
 ```
 ## Configuring the API
 
 1. Create a config.toml file in the root directory of the project with the following content:
 
 ```toml
+[blizzard_api]
 client_id = "your_client_id"
 client_secret = "your_client_secret"
 ``` 
